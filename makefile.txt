@@ -1,6 +1,4 @@
 # Nazwa programu
-
-
 TARGET = mutexy
 
 # Kompilator i flagi
