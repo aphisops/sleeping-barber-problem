@@ -1,4 +1,4 @@
-Problem śpiącego fryzjera
+Problem śpiącego fryzjera: 
 Salon fryzjerski składa się z gabinetu z jednym fotelem (zasób wymagający synchronizacji) oraz
 z poczekalni zawierającej n krzeseł. W danym momencie w gabinecie może być strzyżony tylko jeden
 klient (wątek), reszta czeka na wolnych krzesłach w poczekalni. Fryzjer po skończeniu strzyżenia
