@@ -1,0 +1,30 @@
+# Nazwa programu
+TARGET = mutexy
+
+# Kompilator i flagi
+CC = gcc
+CFLAGS = -Wall -pthread
+
+# Pliki źródłowe
+SRCS = mutexy.c
+
+# Pliki obiektowe
+OBJS = $(SRCS:.c=.o)
+
+# Reguła domyślna
+all: $(TARGET)
+
+# Reguła kompilacji programu
+$(TARGET): $(OBJS)
+	$(CC) $(CFLAGS) -o $(TARGET) $(OBJS)
+
+# Reguła kompilacji plików obiektowych
+%.o: %.c
+	$(CC) $(CFLAGS) -c $< -o $@
+
+# Reguła czyszczenia
+clean:
+	rm -f $(TARGET) $(OBJS)
+
+# Phony targets
+.PHONY: all clean
